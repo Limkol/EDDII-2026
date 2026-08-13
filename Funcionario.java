@@ -10,7 +10,7 @@ public class Funcionario {
         if (salarioMensal > 0){
             this.salarioMensal = salarioMensal;
         } else {
-            this.salarioMensal = 0;
+            this.salarioMensal = 0.00;
         }
     }
 
@@ -18,8 +18,8 @@ public class Funcionario {
         this.salarioMensal = this.salarioMensal * 1.10;
     }
 
-    public Double() {
-        return this.salarioMensal = this.salarioMensal * 12;
+    public Double salarioAnual() {
+        return this.salarioMensal * 12;
     }
 
 }
