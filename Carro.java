@@ -1,18 +1,20 @@
-public class Carro {
+public class Carro extends Veiculo {
 
-    private String marca;
-    private String modelo;
-    private String placa;
+    public String cor;
+    public String modelo;
 
-    public Carro(String marca, String modelo, String placa) {
-        this.marca = marca;
+    public Carro(int ano, float preco, Motor motor, String cor, String modelo) {
+        super(ano, preco, motor);
+
+        this.cor = cor;
         this.modelo = modelo;
-        this.placa = placa;
     }
 
+    @Override
     public void exibirDados() {
-        System.out.println("Marca: " + marca);
+        super.exibirDados();
+
+        System.out.println("Cor: " + cor);
         System.out.println("Modelo: " + modelo);
-        System.out.println("Placa: " + placa);
     }
 }
