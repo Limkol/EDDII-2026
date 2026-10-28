@@ -1,0 +1,4 @@
+Este programa lê um arquivo texto e exibe a frequência de cada palavra que existe no arquivo.
+A frequência indica quantas vezes uma palavra aparece no texto.
+O programa conta a frequência de todas as palavras que o arquivo possui, sem diferenciar maiúsculas de minúsculas.
+Assim, Palavra, palavra e PALAVRA contam como a mesma palavra.
